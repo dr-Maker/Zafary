@@ -1,17 +1,24 @@
-"use strict";
+
+//console.log("hola");
+var boton= window.document.querySelector("#btn");
+boton.addEventListener('click', function(){
+validar();    
+});
 
 function validar(){
 
-let user = document.querySelector('#iduser').value;
-let pass = document.querySelector('#idpass').value;
 
-if(user==="ejemplo@gmail.com" && pass=="123456"){
+    const user = document.querySelector('#iduser').value;
+    const pass = document.querySelector('#idpass').value;
 
-    console.log("Iniciando sesión…");
-}
-else {
+    if (user === "ejemplo@gmail.com" && pass == "123456") {
 
-    console.log("Email y/o contraseña incorrectoss");
-}
-}
+        //alert("Iniciando sesión…");
+        console.log('Iniciando sesión…');
+    } else {
+
+       // alert("Email y/o contraseña incorrectoss");
+        console.log('Email y/o contraseña incorrectoss');
+    }
+};
 
