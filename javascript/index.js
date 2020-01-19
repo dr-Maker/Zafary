@@ -31,7 +31,7 @@ function login() {
     if (user.value === objLocalStorage.idUsuario && pass.value == objLocalStorage.idPass) {
 
         error.classList.add('hide');
-        document.location.assign('../Layout/index.html');
+        document.location.assign('./Layout/index.html');
 
     } else {
 
